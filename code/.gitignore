@@ -1,0 +1,10 @@
+# MEX binaries for Mac are dynamically linked and therefore excluded
+*.mexmaci64
+
+.DS_Store
+
+# Thumbnails
+._*
+
+# Matlab default autosave extension
+*.m~

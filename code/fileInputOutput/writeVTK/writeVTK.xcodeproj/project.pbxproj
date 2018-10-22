@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D70A5C171EEABF150046C187 /* writeVTK.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D70A5C161EEABF150046C187 /* writeVTK.cxx */; };
+		F931FB031FB8BB5700E69910 /* vtkOFFWriter.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F931FB011FB8BB5700E69910 /* vtkOFFWriter.cxx */; };
+		F931FB091FB8C1BF00E69910 /* vtkOBJWriter.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F931FB071FB8C1BF00E69910 /* vtkOBJWriter.cxx */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7F5DF261EEABDCF0061F79B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D70A5C161EEABF150046C187 /* writeVTK.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = writeVTK.cxx; sourceTree = SOURCE_ROOT; };
+		D7F5DF281EEABDCF0061F79B /* writeVTK */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = writeVTK; sourceTree = BUILT_PRODUCTS_DIR; };
+		F931FB011FB8BB5700E69910 /* vtkOFFWriter.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vtkOFFWriter.cxx; sourceTree = "<group>"; };
+		F931FB021FB8BB5700E69910 /* vtkOFFWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vtkOFFWriter.h; sourceTree = "<group>"; };
+		F931FB071FB8C1BF00E69910 /* vtkOBJWriter.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vtkOBJWriter.cxx; sourceTree = "<group>"; };
+		F931FB081FB8C1BF00E69910 /* vtkOBJWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vtkOBJWriter.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7F5DF251EEABDCF0061F79B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7F5DF1F1EEABDCF0061F79B = {
+			isa = PBXGroup;
+			children = (
+				D7F5DF2A1EEABDCF0061F79B /* writeVTK */,
+				D7F5DF291EEABDCF0061F79B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7F5DF291EEABDCF0061F79B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7F5DF281EEABDCF0061F79B /* writeVTK */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7F5DF2A1EEABDCF0061F79B /* writeVTK */ = {
+			isa = PBXGroup;
+			children = (
+				D70A5C161EEABF150046C187 /* writeVTK.cxx */,
+				F931FB001FB8BB5700E69910 /* additionalWriters */,
+			);
+			path = writeVTK;
+			sourceTree = "<group>";
+		};
+		F931FB001FB8BB5700E69910 /* additionalWriters */ = {
+			isa = PBXGroup;
+			children = (
+				F931FB071FB8C1BF00E69910 /* vtkOBJWriter.cxx */,
+				F931FB081FB8C1BF00E69910 /* vtkOBJWriter.h */,
+				F931FB011FB8BB5700E69910 /* vtkOFFWriter.cxx */,
+				F931FB021FB8BB5700E69910 /* vtkOFFWriter.h */,
+			);
+			path = additionalWriters;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7F5DF271EEABDCF0061F79B /* writeVTK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7F5DF2F1EEABDCF0061F79B /* Build configuration list for PBXNativeTarget "writeVTK" */;
+			buildPhases = (
+				D7F5DF241EEABDCF0061F79B /* Sources */,
+				D7F5DF251EEABDCF0061F79B /* Frameworks */,
+				D7F5DF261EEABDCF0061F79B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = writeVTK;
+			productName = writeVTK;
+			productReference = D7F5DF281EEABDCF0061F79B /* writeVTK */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7F5DF201EEABDCF0061F79B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Steffen Schuler";
+				TargetAttributes = {
+					D7F5DF271EEABDCF0061F79B = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D7F5DF231EEABDCF0061F79B /* Build configuration list for PBXProject "writeVTK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D7F5DF1F1EEABDCF0061F79B;
+			productRefGroup = D7F5DF291EEABDCF0061F79B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7F5DF271EEABDCF0061F79B /* writeVTK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7F5DF241EEABDCF0061F79B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F931FB031FB8BB5700E69910 /* vtkOFFWriter.cxx in Sources */,
+				D70A5C171EEABF150046C187 /* writeVTK.cxx in Sources */,
+				F931FB091FB8C1BF00E69910 /* vtkOBJWriter.cxx in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D7F5DF2D1EEABDCF0061F79B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D7F5DF2E1EEABDCF0061F79B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D7F5DF301EEABDCF0061F79B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/Applications/MATLAB_R2017b.app/extern/include,
+					"/opt/local/include/vtk-7.1",
+				);
+				OTHER_LDFLAGS = (
+					"/opt/local/lib/libvtkChartsCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonColor-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonComputationalGeometry-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonDataModel-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonExecutionModel-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonMath-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonMisc-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonSystem-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonTransforms-7.1.1.dylib",
+					"/opt/local/lib/libvtkDICOMParser-7.1.1.dylib",
+					"/opt/local/lib/libvtkDomainsChemistry-7.1.1.dylib",
+					"/opt/local/lib/libvtkDomainsChemistryOpenGL2-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersAMR-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersExtraction-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersFlowPaths-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersGeneral-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersGeneric-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersGeometry-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersHybrid-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersHyperTree-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersImaging-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersModeling-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersParallel-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersParallelImaging-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersPoints-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersProgrammable-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersSMP-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersSelection-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersSources-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersStatistics-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersTexture-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersVerdict-7.1.1.dylib",
+					"/opt/local/lib/libvtkGUISupportQt-7.1.1.dylib",
+					"/opt/local/lib/libvtkGUISupportQtSQL-7.1.1.dylib",
+					"/opt/local/lib/libvtkGeovisCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOAMR-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOEnSight-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOExodus-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOExport-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOGeometry-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOImage-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOImport-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOInfovis-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOLSDyna-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOLegacy-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOMINC-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOMovie-7.1.1.dylib",
+					"/opt/local/lib/libvtkIONetCDF-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOPLY-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOParallel-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOParallelXML-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOSQL-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOTecplotTable-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOVideo-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOXML-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOXMLParser-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingColor-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingFourier-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingGeneral-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingHybrid-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingMath-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingMorphological-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingSources-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingStatistics-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingStencil-7.1.1.dylib",
+					"/opt/local/lib/libvtkInfovisCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkInfovisLayout-7.1.1.dylib",
+					"/opt/local/lib/libvtkInteractionImage-7.1.1.dylib",
+					"/opt/local/lib/libvtkInteractionStyle-7.1.1.dylib",
+					"/opt/local/lib/libvtkInteractionWidgets-7.1.1.dylib",
+					"/opt/local/lib/libvtkNetCDF-7.1.1.dylib",
+					"/opt/local/lib/libvtkNetCDF_cxx-7.1.1.dylib",
+					"/opt/local/lib/libvtkParallelCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingAnnotation-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingContext2D-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingContextOpenGL2-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingFreeType-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingGL2PSOpenGL2-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingImage-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingLOD-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingLabel-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingOpenGL2-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingQt-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingVolume-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingVolumeOpenGL2-7.1.1.dylib",
+					"/opt/local/lib/libvtkViewsContext2D-7.1.1.dylib",
+					"/opt/local/lib/libvtkViewsCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkViewsInfovis-7.1.1.dylib",
+					"/opt/local/lib/libvtkViewsQt-7.1.1.dylib",
+					"/opt/local/lib/libvtkWrappingTools-7.1.a",
+					"/opt/local/lib/libvtkalglib-7.1.1.dylib",
+					"/opt/local/lib/libvtkexoIIc-7.1.1.dylib",
+					"/opt/local/lib/libvtkexpat-7.1.1.dylib",
+					"/opt/local/lib/libvtkfreetype-7.1.1.dylib",
+					"/opt/local/lib/libvtkgl2ps-7.1.1.dylib",
+					"/opt/local/lib/libvtkglew-7.1.1.dylib",
+					"/opt/local/lib/libvtkhdf5-7.1.1.dylib",
+					"/opt/local/lib/libvtkhdf5_hl-7.1.1.dylib",
+					"/opt/local/lib/libvtkjpeg-7.1.1.dylib",
+					"/opt/local/lib/libvtkjsoncpp-7.1.1.dylib",
+					"/opt/local/lib/libvtklibxml2-7.1.1.dylib",
+					"/opt/local/lib/libvtkmetaio-7.1.1.dylib",
+					"/opt/local/lib/libvtkoggtheora-7.1.1.dylib",
+					"/opt/local/lib/libvtkpng-7.1.1.dylib",
+					"/opt/local/lib/libvtkproj4-7.1.1.dylib",
+					"/opt/local/lib/libvtksqlite-7.1.1.dylib",
+					"/opt/local/lib/libvtksys-7.1.1.dylib",
+					"/opt/local/lib/libvtktiff-7.1.1.dylib",
+					"/opt/local/lib/libvtkverdict-7.1.1.dylib",
+					"/opt/local/lib/libvtkzlib-7.1.1.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7F5DF311EEABDCF0061F79B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/Applications/MATLAB_R2017b.app/extern/include,
+					"/opt/local/include/vtk-7.1",
+				);
+				OTHER_LDFLAGS = (
+					"/opt/local/lib/libvtkChartsCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonColor-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonComputationalGeometry-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonDataModel-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonExecutionModel-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonMath-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonMisc-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonSystem-7.1.1.dylib",
+					"/opt/local/lib/libvtkCommonTransforms-7.1.1.dylib",
+					"/opt/local/lib/libvtkDICOMParser-7.1.1.dylib",
+					"/opt/local/lib/libvtkDomainsChemistry-7.1.1.dylib",
+					"/opt/local/lib/libvtkDomainsChemistryOpenGL2-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersAMR-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersExtraction-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersFlowPaths-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersGeneral-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersGeneric-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersGeometry-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersHybrid-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersHyperTree-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersImaging-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersModeling-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersParallel-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersParallelImaging-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersPoints-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersProgrammable-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersSMP-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersSelection-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersSources-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersStatistics-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersTexture-7.1.1.dylib",
+					"/opt/local/lib/libvtkFiltersVerdict-7.1.1.dylib",
+					"/opt/local/lib/libvtkGUISupportQt-7.1.1.dylib",
+					"/opt/local/lib/libvtkGUISupportQtSQL-7.1.1.dylib",
+					"/opt/local/lib/libvtkGeovisCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOAMR-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOEnSight-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOExodus-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOExport-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOGeometry-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOImage-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOImport-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOInfovis-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOLSDyna-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOLegacy-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOMINC-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOMovie-7.1.1.dylib",
+					"/opt/local/lib/libvtkIONetCDF-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOPLY-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOParallel-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOParallelXML-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOSQL-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOTecplotTable-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOVideo-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOXML-7.1.1.dylib",
+					"/opt/local/lib/libvtkIOXMLParser-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingColor-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingFourier-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingGeneral-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingHybrid-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingMath-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingMorphological-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingSources-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingStatistics-7.1.1.dylib",
+					"/opt/local/lib/libvtkImagingStencil-7.1.1.dylib",
+					"/opt/local/lib/libvtkInfovisCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkInfovisLayout-7.1.1.dylib",
+					"/opt/local/lib/libvtkInteractionImage-7.1.1.dylib",
+					"/opt/local/lib/libvtkInteractionStyle-7.1.1.dylib",
+					"/opt/local/lib/libvtkInteractionWidgets-7.1.1.dylib",
+					"/opt/local/lib/libvtkNetCDF-7.1.1.dylib",
+					"/opt/local/lib/libvtkNetCDF_cxx-7.1.1.dylib",
+					"/opt/local/lib/libvtkParallelCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingAnnotation-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingContext2D-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingContextOpenGL2-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingFreeType-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingGL2PSOpenGL2-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingImage-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingLOD-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingLabel-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingOpenGL2-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingQt-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingVolume-7.1.1.dylib",
+					"/opt/local/lib/libvtkRenderingVolumeOpenGL2-7.1.1.dylib",
+					"/opt/local/lib/libvtkViewsContext2D-7.1.1.dylib",
+					"/opt/local/lib/libvtkViewsCore-7.1.1.dylib",
+					"/opt/local/lib/libvtkViewsInfovis-7.1.1.dylib",
+					"/opt/local/lib/libvtkViewsQt-7.1.1.dylib",
+					"/opt/local/lib/libvtkWrappingTools-7.1.a",
+					"/opt/local/lib/libvtkalglib-7.1.1.dylib",
+					"/opt/local/lib/libvtkexoIIc-7.1.1.dylib",
+					"/opt/local/lib/libvtkexpat-7.1.1.dylib",
+					"/opt/local/lib/libvtkfreetype-7.1.1.dylib",
+					"/opt/local/lib/libvtkgl2ps-7.1.1.dylib",
+					"/opt/local/lib/libvtkglew-7.1.1.dylib",
+					"/opt/local/lib/libvtkhdf5-7.1.1.dylib",
+					"/opt/local/lib/libvtkhdf5_hl-7.1.1.dylib",
+					"/opt/local/lib/libvtkjpeg-7.1.1.dylib",
+					"/opt/local/lib/libvtkjsoncpp-7.1.1.dylib",
+					"/opt/local/lib/libvtklibxml2-7.1.1.dylib",
+					"/opt/local/lib/libvtkmetaio-7.1.1.dylib",
+					"/opt/local/lib/libvtkoggtheora-7.1.1.dylib",
+					"/opt/local/lib/libvtkpng-7.1.1.dylib",
+					"/opt/local/lib/libvtkproj4-7.1.1.dylib",
+					"/opt/local/lib/libvtksqlite-7.1.1.dylib",
+					"/opt/local/lib/libvtksys-7.1.1.dylib",
+					"/opt/local/lib/libvtktiff-7.1.1.dylib",
+					"/opt/local/lib/libvtkverdict-7.1.1.dylib",
+					"/opt/local/lib/libvtkzlib-7.1.1.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7F5DF231EEABDCF0061F79B /* Build configuration list for PBXProject "writeVTK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F5DF2D1EEABDCF0061F79B /* Debug */,
+				D7F5DF2E1EEABDCF0061F79B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7F5DF2F1EEABDCF0061F79B /* Build configuration list for PBXNativeTarget "writeVTK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F5DF301EEABDCF0061F79B /* Debug */,
+				D7F5DF311EEABDCF0061F79B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7F5DF201EEABDCF0061F79B /* Project object */;
+}
